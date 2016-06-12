@@ -1,26 +1,3 @@
-defmodule Router do
-  defmacro __using__(_opts) do
-    quote do
-      def init(options) do
-        options
-      end
-
-      def call(conn, _opts) do
-        route(conn.method, conn.path_info, conn)
-      end
-    end
-  end
-end
-
-defmodule User do
-  use Ecto.Model
-
-  schema "users" do
-    field :first_name, :string
-    field :last_name, :string
-  end
-end
-
 defmodule HelloPlug do
 
   use Router

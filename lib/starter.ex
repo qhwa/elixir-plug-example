@@ -6,7 +6,8 @@ defmodule HelloPlug.Starter do
     import Supervisor.Spec
 
     children = [
-      worker(HelloPlug, [])
+      worker(HelloPlug, []),
+      worker(HelloPlug.Repo, [])
     ]
 
     opts = [strategy: :one_for_one, name: HelloPlug]
