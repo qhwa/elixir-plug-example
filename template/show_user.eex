@@ -2,6 +2,6 @@
 <html>
   <body>
     <h1>User Information Page</h1>
-    <p>user : <%= user.first_name %>% <%= user.last_name %></p>
+    <p>user : <%= user.first_name %> <%= user.last_name %></p>
   </body>
 </html>

@@ -31,4 +31,4 @@ use Mix.Config
 
 config :hello_plug, HelloPlug.Repo,
   adapter: Sqlite.Ecto,
-  database: "hello_plug.sqlite3"
+  database: "db/hello_plug.sqlite3"
